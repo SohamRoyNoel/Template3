@@ -1,0 +1,496 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Analytics | Notika - Notika Admin Template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon
+		============================================ -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <!-- Google Fonts
+		============================================ -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet">
+    <!-- Bootstrap CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- font awesome CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- owl.carousel CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/owl.transitions.css">
+    <!-- meanmenu CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/meanmenu/meanmenu.min.css">
+    <!-- Notika icon CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/notika-custom-icon.css">
+    <!-- mCustomScrollbar CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/scrollbar/jquery.mCustomScrollbar.min.css">
+    <!-- animate CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- normalize CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/normalize.css">
+	<!-- wave CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/wave/waves.min.css">
+    <link rel="stylesheet" href="css/wave/button.css">
+    <!-- main CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- style CSS
+		============================================ -->
+    <link rel="stylesheet" href="style.css">
+    <!-- responsive CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/cardsmaster.css">
+    <!-- modernizr JS
+        ============================================ -->
+        <style>
+            /*https://wallpapertag.com/wallpaper/full/6/8/6/918384-png-wallpapers-2560x1600-for-lockscreen.jpg*/
+            /*https://uhdwallpapers.org/uploads/converted/19/06/04/ios-13-stock-wallpaper-2560x1600_949874-mm-90.jpg*/
+            /*https://images.alphacoders.com/945/thumb-1920-945001.jpg*/
+            /*https://wallup.net/wp-content/uploads/2015/12/75959-abstract-gradient.jpg*/
+            body {
+      background-image: url("https://wallup.net/wp-content/uploads/2015/12/75959-abstract-gradient.jpg");
+      background-repeat: inherit;
+    }
+        </style>
+    <!-- DateRange PIcker-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <script type="text/javascript">
+            $(function() {
+            
+            $('input[name="datefilter"]').daterangepicker({
+                autoUpdateInput: false,
+                locale: {
+                    cancelLabel: 'Clear'
+                }
+            });
+            
+            $('input[name="datefilter"]').on('apply.daterangepicker', function(ev, picker) {
+                $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
+            });
+            
+            $('input[name="datefilter"]').on('cancel.daterangepicker', function(ev, picker) {
+                $(this).val('');
+            });
+            
+            });
+    </script>
+    
+    
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <!-- Start Header Top Area -->
+    <div class="header-top-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="logo-area">
+                        <a href="#"><img style="height: 50px;" src="https://recruit.smashfly.com/SmashFlyMedia/Images/14002/14002_5075_Manulife_JohnHancock_rgb.png" alt="" /></a>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Header Top Area -->
+    <!-- Mobile Menu start -->
+    <div class="mobile-menu-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="mobile-menu">
+                        <nav id="dropdown">
+                            <ul class="mobile-menu-nav">
+                                <li><a data-toggle="collapse" data-target="#Charts" href="#">Manulife Regional QA Dashboard</a>
+                                    <ul class="collapse dropdown-header-top">
+                                        <li><a href="index.html">Dashboard One</a></li>
+                                        <li><a href="index-2.html">Dashboard Two</a></li>
+                                        <li><a href="index-3.html">Dashboard Three</a></li>
+                                        <li><a href="index-4.html">Dashboard Four</a></li>
+                                        <li><a href="analytics.html">Analytics</a></li>
+                                        <li><a href="widgets.html">Widgets</a></li>
+                                    </ul>
+                                </li>                                
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Mobile Menu end -->
+    <!-- Main Menu area start-->
+    <div class="main-menu-area mg-tb-40">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <ul class="nav nav-tabs notika-menu-wrap menu-it-icon-pro">
+                        <li class="active"><a data-toggle="tab" href="#Home"><img src="https://img.icons8.com/flat_round/20/000000/warranty-card.png"/> Manulife Regional QA Dashboard</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content custom-menu-content">
+                        <div id="Home" class="tab-pane in active notika-tab-menu-bg animated flipInX">
+                            <ul class="notika-main-menu-dropdown">
+                                <li><a href="index.html"><img src="https://img.icons8.com/dusk/16/000000/database-restore.png"/>&nbsp&nbspData Entry</a>
+                                </li>
+                                <li><a href="index-2.html"><img src="https://img.icons8.com/officel/16/000000/matrix-desktop.png"/>&nbsp&nbspMatrices Definition</a>
+                                </li>
+                                <li><a href="index-3.html"><img src="https://img.icons8.com/officel/16/000000/human-torch.png"/>&nbsp&nbspFunctional KPI</a>
+                                </li>
+                                <li><a href="index-4.html"><img src="https://img.icons8.com/color/16/000000/gears.png"/>&nbsp&nbspAutomation KPI</a>
+                                </li>
+                                <li><a href="analytics.html"><img src="https://img.icons8.com/color/16/000000/graph.png"/>&nbsp&nbspKPI Trending</a>
+                                </li>
+                                <li><a href="widgets.html"><img src="https://img.icons8.com/fluent/16/000000/price-tag.png"/>&nbsp&nbspRelease Info</a>
+                                </li>
+                                <li><a href="widgets.html"><img src="https://img.icons8.com/emoji/16/000000/part-alternation-mark-emoji.png"/>&nbsp&nbspConfig Benchmark</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main Menu area End-->
+	<!-- Breadcomb area Start-->
+	<div class="breadcomb-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="breadcomb-list">
+						<div class="row">
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+								<div class="breadcomb-wp">
+									<div class="breadcomb-icon">
+										<img src="https://img.icons8.com/fluent/48/000000/speed.png"/>
+									</div>
+									<div class="breadcomb-ctn">
+										<h2>Analytics Dashboard</h2>
+										<p>Welcome to Manulife <span class="bread-ntd">QA Dashboard</span></p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-3">
+								<div class="breadcomb-report">
+									<input type="text" style="width: 300px; float: right;" class="form-control" name="datefilter" placeholder="Select Date Range" />  
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Breadcomb area End-->
+    <!-- Server time start-->
+    <div class="visitor-sv-tm-area">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-4 col-md-4 col-sm-4"> 
+                    <div class="visitor-sv-tm-ch">
+                        <div class="card">
+                            <div class="face face1">
+                                <div class="content">
+                                    <div class="icon">
+                                        <br><br><br><center><img src="https://media.glassdoor.com/sqll/2215529/move-squarelogo-1574155319067.png" style="border-radius: 10px; height: 80px; width: 80px;"></center>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="face face2">
+                                <div class="content">
+                                    <h3>
+                                        <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank">_adamdipinto</a>
+                                    </h3>
+                                    <p>This is where I network and build my professional protfolio.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-4 col-sm-4"> 
+                    <div class="visitor-sv-tm-ch">
+                        <div class="card">
+                            <div class="face face1">
+                                <div class="content">
+                                    <div class="icon">
+                                        <br><br><br><center><img src="https://media-exp1.licdn.com/dms/image/C4D0BAQEwN-Ddkwgt2A/company-logo_200_200/0?e=2159024400&v=beta&t=qdU_szLLq4umZn-XMqe80Ck3Cue_Y-Hqt6JuvcOjFdA" style="border-radius: 10px; height: 80px; width: 80px;"></center>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="face face2">
+                                <div class="content">
+                                    <h3>
+                                        <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank">_adamdipinto</a>
+                                    </h3>
+                                    <p>This is where I network and build my professional protfolio.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4"> 
+                    <div class="visitor-sv-tm-ch">
+                        <div class="card">
+                            <div class="face face1">
+                                <div class="content">
+                                    <div class="icon">
+                                        <br><br><br><center><img src="data:image/png;base64,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" style="border-radius: 10px; height: 80px; width: 80px;"></center>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="face face2">
+                                <div class="content">
+                                    <h3>
+                                        <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank">_adamdipinto</a>
+                                    </h3>
+                                    <p>This is where I network and build my professional protfolio.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Server time End-->
+    <!-- Search Engine Start-->
+    <div class="search-engine-area mg-t-30">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4"> 
+                    <div class="visitor-sv-tm-ch">
+                        <div class="card">
+                            <div class="face face1">
+                                <div class="content">
+                                    <div class="icon">
+                                        <br><br><br><center><img src="https://www.klinix.com/wp-content/uploads/2016/05/34970561-claims-seal-illustration-design-over-a-white-background-Stock-Vector.jpg" style="border-radius: 10px; height: 80px; width: 80px;"></center>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="face face2">
+                                <div class="content">
+                                    <h3>
+                                        <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank">_adamdipinto</a>
+                                    </h3>
+                                    <p>This is where I network and build my professional protfolio.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4"> 
+                    <div class="visitor-sv-tm-ch">
+                        <div class="card">
+                            <div class="face face1">
+                                <div class="content">
+                                    <div class="icon">
+                                        <br><br><br><center><img src="https://image.shutterstock.com/image-vector/calligraphic-lettering-logo-malaysia-independence-260nw-1338356060.jpg" style="border-radius: 10px; height: 80px; width: 80px;"></center>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="face face2">
+                                <div class="content">
+                                    <h3>
+                                        <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank">_adamdipinto</a>
+                                    </h3>
+                                    <p>This is where I network and build my professional protfolio.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4"> 
+                    <div class="visitor-sv-tm-ch">
+                        <div class="card">
+                            <div class="face face1">
+                                <div class="content">
+                                    <div class="icon">
+                                        <br><br><br><center><img src="https://media.istockphoto.com/vectors/indonesian-flag-in-the-shape-of-a-large-circle-vector-illustration-vector-id1161115588" style="border-radius: 10px; height: 80px; width: 80px;"></center>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="face face2">
+                                <div class="content">
+                                    <h3>
+                                        <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank">_adamdipinto</a>
+                                    </h3>
+                                    <p>This is where I network and build my professional protfolio.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="search-engine-area mg-t-30">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4"> 
+                    <div class="visitor-sv-tm-ch">
+                        <div class="card">
+                            <div class="face face1">
+                                <div class="content">
+                                    <div class="icon">
+                                        <br><br><br><center><img src="https://vectorgrovepreview.azureedge.net/c/455/c455838.jpg?st=2019-11-06T10%3A03%3A41Z&se=2039-12-31T22%3A00%3A00Z&sp=r&sv=2018-03-28&sr=c&sig=zblTCxEF2g7nMxSIOzivUbXvPyq%2B%2Fz5hxWjVoAbSdWw%3D" style="border-radius: 10px; height: 80px; width: 80px;"></center>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="face face2">
+                                <div class="content">
+                                    <h3>
+                                        <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank">_adamdipinto</a>
+                                    </h3>
+                                    <p>This is where I network and build my professional protfolio.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4"> 
+                    <div class="visitor-sv-tm-ch">
+                        <div class="card">
+                            <div class="face face1">
+                                <div class="content">
+                                    <div class="icon">
+                                        <br><br><br><center><img src="https://previews.123rf.com/images/linasemenova/linasemenova1902/linasemenova190200036/117236500-hand-lettering-modern-calligraphy-singapore-text-on-red-watercolor-texture-spot-typography-vector-il.jpg" style="border-radius: 10px; height: 80px; width: 80px;"></center>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="face face2">
+                                <div class="content">
+                                    <h3>
+                                        <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank">_adamdipinto</a>
+                                    </h3>
+                                    <p>This is where I network and build my professional protfolio.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4"> 
+                    <div class="visitor-sv-tm-ch">
+                        <div class="card">
+                            <div class="face face1">
+                                <div class="content">
+                                    <div class="icon">
+                                        <br><br><br><center><img src="data:image/png;base64,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" style="border-radius: 10px; height: 80px; width: 80px;"></center>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="face face2">
+                                <div class="content">
+                                    <h3>
+                                        <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank">_adamdipinto</a>
+                                    </h3>
+                                    <p>This is where I network and build my professional protfolio.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Search Engine End-->
+    <!-- Start Footer area-->
+    <div class="footer-copyright-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="footer-copy-right">
+                        <p>Copyright © 2020
+. All rights reserved. Template by <a href="">CoP Automation Team</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- End Footer area-->
+    <!-- jquery
+		============================================ -->
+    <!-- <script src="js/vendor/jquery-1.12.4.min.js"></script> -->
+    <!-- bootstrap JS
+		============================================ -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- wow JS
+		============================================ -->
+    <script src="js/wow.min.js"></script>
+    <!-- price-slider JS
+		============================================ -->
+    <script src="js/jquery-price-slider.js"></script>
+    <!-- owl.carousel JS
+		============================================ -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- scrollUp JS
+		============================================ -->
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <!-- meanmenu JS
+		============================================ -->
+    <script src="js/meanmenu/jquery.meanmenu.js"></script>
+    <!-- counterup JS
+		============================================ -->
+    <script src="js/counterup/jquery.counterup.min.js"></script>
+    <script src="js/counterup/waypoints.min.js"></script>
+    <script src="js/counterup/counterup-active.js"></script>
+    <!-- sparkline JS
+		============================================ -->
+    <script src="js/sparkline/jquery.sparkline.min.js"></script>
+    <script src="js/sparkline/sparkline-active.js"></script>
+    <!-- knob JS
+		============================================ -->
+    <script src="js/knob/jquery.knob.js"></script>
+    <script src="js/knob/jquery.appear.js"></script>
+    <script src="js/knob/knob-active.js"></script>
+    <!-- mCustomScrollbar JS
+		============================================ -->
+    <script src="js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!-- flot JS
+		============================================ -->
+    <script src="js/flot/jquery.flot.js"></script>
+    <script src="js/flot/jquery.flot.resize.js"></script>
+    <script src="js/flot/jquery.flot.time.js"></script>
+    <script src="js/flot/jquery.flot.tooltip.min.js"></script>
+    <script src="js/flot/analtic-flot-active.js"></script>
+	<!--  wave JS
+		============================================ -->
+    <script src="js/wave/waves.min.js"></script>
+    <script src="js/wave/wave-active.js"></script>
+    <!-- plugins JS
+		============================================ -->
+    <script src="js/plugins.js"></script>
+    <!-- main JS
+		============================================ -->
+    <script src="js/main.js"></script>
+	<!-- tawk chat JS
+		============================================ -->
+    <script src="js/tawk-chat.js"></script>
+</body>
+
+</html>
